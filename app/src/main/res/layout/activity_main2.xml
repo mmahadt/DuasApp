@@ -6,13 +6,13 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:orientation="vertical"
-    tools:context=".MainActivity">
+    tools:context=".MainActivity2">
 
     <TextView
         android:layout_width="wrap_content"
         android:layout_height="0dp"
         android:layout_weight="1"
-        android:text="1.	لَا إلَهَ إلَّا اللَّهُ العَظِيمُ الحَلِيمُ، لا إلَهَ إلَّا اللَّهُ رَبُّ العَرْشِ العَظِيمِ، لا إلَهَ إلَّا اللَّهُ رَبُّ السَّمَوَاتِ ورَبُّ الأرْضِ، ورَبُّ العَرْشِ الكَرِيمِ."
+        android:text="2.	اللهُ اللهُ رَبِّي ، لَا أُشرِكُ بِهِ شَيئًا."
         android:textSize="41sp"
         android:gravity="center"
         android:padding="16dp"
@@ -40,10 +40,10 @@
     </TextView>
 
     <Button
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_gravity="center"
         android:layout_margin="16dp"
-        android:onClick="nextPage"
-        android:text="next >"></Button>
+        android:text="next >"
+        android:layout_gravity="center"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content">
+    </Button>
 </LinearLayout>

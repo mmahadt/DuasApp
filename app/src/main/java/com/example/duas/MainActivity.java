@@ -1,11 +1,13 @@
 package com.example.duas;
 
+import android.content.Intent;
 import android.os.Bundle;
 import android.app.Activity;
 
 import android.content.Context;
 
 import android.util.Log;
+import android.view.View;
 
 
 import com.github.barteksc.pdfviewer.PDFView;
@@ -33,6 +35,11 @@ MainActivity extends Activity implements OnPageChangeListener,OnLoadCompleteList
         } catch (Exception e) { e.printStackTrace();}
     }
 
+    public void nextPage(View view){
+        Intent intent = new Intent(this, MainActivity2.class);
+        startActivity(intent);
+    }
+
     public static boolean deleteDir(File dir) {
         if (dir != null && dir.isDirectory()) {
             String[] children = dir.list();
@@ -56,8 +63,8 @@ MainActivity extends Activity implements OnPageChangeListener,OnLoadCompleteList
         setContentView(R.layout.activity_main);
 
 
-        pdfView= (PDFView)findViewById(R.id.pdfView);
-        displayFromAsset(SAMPLE_FILE);
+//        pdfView= (PDFView)findViewById(R.id.pdfView);
+//        displayFromAsset(SAMPLE_FILE);
     }
 
     private void displayFromAsset(String assetFileName) {
